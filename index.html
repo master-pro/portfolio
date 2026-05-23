@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mustafa Mustafa - Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .lang-hidden { display: none !important; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans antialiased selection:bg-emerald-500 selection:text-white">
+
+    <header class="sticky top-0 z-50 bg-gray-900/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent">
+                Mustafa Dev
+            </h1>
+            <button id="lang-toggle" class="bg-gray-800 hover:bg-gray-700 text-emerald-400 font-medium px-4 py-2 rounded-lg border border-gray-750 transition-all cursor-pointer text-sm">
+                English 🇬🇧
+            </button>
+        </div>
+    </header>
+
+    <section class="max-w-5xl mx-auto px-4 py-20 text-center">
+        <h2 class="text-4xl md:text-5xl font-black mb-4 tracking-tight">
+            Мустафа Мустафа Махьюб
+        </h2>
+        
+        <p class="lang-ru text-emerald-400 text-lg md:text-xl max-w-2xl mx-auto font-medium">
+            Full-Stack Разработчик | Веб и мобильные приложения
+        </p>
+        <p class="lang-en lang-hidden text-emerald-400 text-lg md:text-xl max-w-2xl mx-auto font-medium">
+            Full-Stack Developer | Web & Mobile Applications
+        </p>
+
+        <div class="mt-6 flex flex-wrap justify-center gap-4 text-sm text-gray-400">
+            <span>📍 Казань (Kazan)</span>
+            <a href="mailto:e.mustafa.mustafa@gmail.com" class="hover:text-emerald-400 transition-colors">📧 e.mustafa.mustafa@gmail.com</a>
+            <a href="https://t.me/Mustafa_434" target="_blank" class="hover:text-emerald-400 transition-colors">✈️ Telegram: @Mustafa_434</a>
+            <a href="https://gitlab.com/e.mustafa.mustafa" target="_blank" class="hover:text-emerald-400 transition-colors">🦊 GitLab</a>
+        </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto px-4 py-12 border-t border-gray-800">
+        <h3 class="text-2xl font-bold mb-6 text-gray-200">
+            <span class="lang-ru">🛠️ Стек технологий</span>
+            <span class="lang-en lang-hidden">🛠️ Tech Stack</span>
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-gray-850 p-6 rounded-xl border border-gray-800">
+                <h4 class="text-emerald-400 font-bold mb-3">Backend</h4>
+                <p class="text-sm text-gray-400 leading-relaxed">Python, FastAPI, Django REST Framework, Celery, Odoo ERP, Redis, PostgreSQL, ClickHouse</p>
+            </div>
+            <div class="bg-gray-850 p-6 rounded-xl border border-gray-800">
+                <h4 class="text-emerald-400 font-bold mb-3">Frontend</h4>
+                <p class="text-sm text-gray-400 leading-relaxed">JavaScript, Next.js, React.js, Vite.js, OWL (Odoo Web Library), HTML5, CSS3, XML</p>
+            </div>
+            <div class="bg-gray-850 p-6 rounded-xl border border-gray-800">
+                <h4 class="text-emerald-400 font-bold mb-3">DevOps & AI</h4>
+                <p class="text-sm text-gray-400 leading-relaxed">Docker, GitLab CI/CD, Git, LLM Integration, LangChain, MCP, Prompt Engineering</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto px-4 py-12 border-t border-gray-800">
+        <h3 class="text-2xl font-bold mb-8 text-gray-200">
+            <span class="lang-ru">💼 Проекты</span>
+            <span class="lang-en lang-hidden">💼 Featured Projects</span>
+        </h3>
+
+        <div class="space-y-8">
+            <div class="bg-gray-850 p-6 rounded-xl border border-gray-800 hover:border-gray-700 transition-all">
+                <div class="flex justify-between items-start flex-wrap gap-2 mb-3">
+                    <h4 class="text-xl font-bold text-white">Quicon Space <span class="text-sm font-normal text-gray-500">| Full-Stack</span></h4>
+                    <a href="https://quicon.space/" target="_blank" class="text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-3 py-1 rounded-full hover:bg-emerald-500/20 transition-all">🔗 quicon.space</a>
+                </div>
+                <p class="text-xs text-gray-400 mb-4 font-mono">FastAPI, React.js, Vite.js, PostgreSQL, Redis, Docker, GitLab CI</p>
+                <ul class="list-disc list-inside space-y-2 text-sm text-gray-300 lang-ru">
+                    <li>Разрабатывал и оптимизировал асинхронные бэкенд-микросервисы для SaaS-платформы автоматизации контента.</li>
+                    <li>Создал отзывчивую панель управления (dashboard) на React и Vite.js для быстрой работы с состоянием UI.</li>
+                    <li>Интегрировал AI-сервисы для автоматической обработки видео и генерации медиа-контента.</li>
+                    <li>Контейнеризировал модули приложения с помощью Docker и настроил конвейеры CI/CD в GitLab.</li>
+                </ul>
+                <ul class="list-disc list-inside space-y-2 text-sm text-gray-300 lang-en lang-hidden">
+                    <li>Developed and optimized asynchronous backend microservices for a high-traffic content automation SaaS platform using FastAPI.</li>
+                    <li>Built a highly responsive dashboard using React and Vite.js, ensuring fast state management and clean rendering.</li>
+                    <li>Integrated AI services for automated video processing, dynamic content generation, and workflow automation.</li>
+                    <li>Containerized modules using Docker and established automated GitLab CI/CD pipelines.</li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-850 p-6 rounded-xl border border-gray-800 hover:border-gray-700 transition-all">
+                <div class="flex justify-between items-start flex-wrap gap-2 mb-3">
+                    <h4 class="text-xl font-bold text-white">Launchbase <span class="text-sm font-normal text-gray-500">| Full-Stack</span></h4>
+                    <a href="https://launch-base.ru/" target="_blank" class="text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-3 py-1 rounded-full hover:bg-emerald-500/20 transition-all">🔗 launch-base.ru</a>
+                </div>
+                <p class="text-xs text-gray-400 mb-4 font-mono">Python, Django REST Framework, Next.js, React, Celery, Redis</p>
+                <ul class="list-disc list-inside space-y-2 text-sm text-gray-300 lang-ru">
+                    <li>Спроектировал масштабируемую MVP-платформу, разработав надежную схему БД и защищенные REST API на Django.</li>
+                    <li>Разработал динамичный, SEO-оптимизированный фронтенд на Next.js и React для плавной работы интерфейса.</li>
+                    <li>Реализовал интерактивные real-time интерфейсы для взаимодействия пользователей, блогеров и продюсеров.</li>
+                    <li>Вынес ресурсоемкие вычисления и фоновые задачи в отдельный слой воркеров на базе Celery и Redis.</li>
+                </ul>
+                <ul class="list-disc list-inside space-y-2 text-sm text-gray-300 lang-en lang-hidden">
+                    <li>Engineered a scalable MVP networking platform, architecting a robust database schema and REST APIs with Django.</li>
+                    <li>Crafted a dynamic, SEO-friendly frontend application using Next.js and React, providing fluid performance.</li>
+                    <li>Implemented interactive real-time interfaces to seamlessly connect platform users, content creators, and managers.</li>
+                    <li>Offloaded heavy data computations and asynchronous tasks to a background layer powered by Celery and Redis.</li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-850 p-6 rounded-xl border border-gray-800 hover:border-gray-700 transition-all">
+                <div class="flex justify-between items-start flex-wrap gap-2 mb-3">
+                    <h4 class="text-xl font-bold text-white">Smile Givers <span class="text-sm font-normal text-gray-500">| Odoo Full-Stack</span></h4>
+                    <a href="https://smilegivers-main-23699500.dev.odoo.com/home" target="_blank" class="text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-3 py-1 rounded-full hover:bg-emerald-500/20 transition-all">🔗 smilegivers-main.odoo.com</a>
+                </div>
+                <p class="text-xs text-gray-400 mb-4 font-mono">Python, OWL, QWeb, JavaScript, XML, HTML</p>
+                <ul class="list-disc list-inside space-y-2 text-sm text-gray-300 lang-ru">
+                    <li>Разработал публичную часть корпоративного сайта на Odoo, добавив кастомные динамические блоки-компоненты (snippets).</li>
+                    <li>Глубоко кастомизировал внутренний интерфейс Odoo Web-Enterprise UI с помощью JS, XML и библиотеки OWL.</li>
+                    <li>Ограничил доступ к корпоративной ERP-системе для внешних посетителей, закрыв приватные данные за авторизацией.</li>
+                    <li>Связал кастомную бизнес-логику бэкенда на Python с интерактивными шаблонами отображения QWeb.</li>
+                </ul>
+                <ul class="list-disc list-inside space-y-2 text-sm text-gray-300 lang-en lang-hidden">
+                    <li>Designed and built the public website layout by creating customized, modular Odoo snippet blocks.</li>
+                    <li>Extensively customized Odoo's internal Enterprise Web UI using JavaScript, XML, and OWL framework.</li>
+                    <li>Secured business workflow transparency by closing the core internal dashboard systems away from public visitors.</li>
+                    <li>Developed backend business models in Python, mapping structured fields smoothly into frontend templates.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="max-w-5xl mx-auto px-4 py-8 border-t border-gray-800 text-center text-xs text-gray-500">
+        <p>© 2026 Mustafa Mustafa. Powered by GitHub Pages.</p>
+    </footer>
+
+    <script>
+        const toggleBtn = document.getElementById('lang-toggle');
+        const ruElements = document.querySelectorAll('.lang-ru');
+        const enElements = document.querySelectorAll('.lang-en');
+        let currentLang = 'ru';
+
+        toggleBtn.addEventListener('click', () => {
+            if (currentLang === 'ru') {
+                ruElements.forEach(el => el.classList.add('lang-hidden'));
+                enElements.forEach(el => el.classList.remove('lang-hidden'));
+                toggleBtn.innerText = 'Русский 🇷🇺';
+                currentLang = 'en';
+            } else {
+                enElements.forEach(el => el.classList.add('lang-hidden'));
+                ruElements.forEach(el => el.classList.remove('lang-hidden'));
+                toggleBtn.innerText = 'English 🇬🇧';
+                currentLang = 'ru';
+            }
+        });
+    </script>
+</body>
+</html>
